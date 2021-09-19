@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="1" name="com.cucumber.CucumberTest" time="31.993" errors="0" skipped="0">
+  <properties>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.boot.class.path" value="/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/amd64/default/jclSC180/vm.jar:/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/se-service.jar:/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/rt.jar:/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/resources.jar:/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/jsse.jar:/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/charsets.jar:/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/jce.jar"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="1.8.0_292-b10"/>
+    <property name="user.name" value="imuerte"/>
+    <property name="java.compiler" value="j9jit29"/>
+    <property name="os.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="com.ibm.util.extralibs.properties" value=""/>
+    <property name="com.ibm.jcl.checkClassPath" value=""/>
+    <property name="user.language" value="es"/>
+    <property name="com.ibm.oti.vm.bootstrap.library.path" value="/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/amd64/default:/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/amd64"/>
+    <property name="sun.boot.library.path" value="/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/amd64/default:/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/amd64"/>
+    <property name="classworlds.conf" value="/home/imuerte/dev/apache-maven-3.8.1/bin/m2.conf"/>
+    <property name="jdk.extensions.version" value="8.0.292.0"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="com.ibm.system.agent.path" value="/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/amd64"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="com.ibm.zero.version" value="2"/>
+    <property name="java.endorsed.dirs" value="/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/endorsed"/>
+    <property name="com.ibm.oti.vm.library.version" value="29"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.conf" value="/home/imuerte/dev/apache-maven-3.8.1/conf"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="user.country" value="ES"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.home" value="/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre"/>
+    <property name="java.vm.info" value="JRE 1.8.0 Linux amd64-64-Bit Compressed References 20210421_1000 (JIT enabled, AOT enabled)
+OpenJ9   - b4cc246d9
+OMR      - 162e6f729
+JCL      - 2a5e268814 based on jdk8u292-b10"/>
+    <property name="os.version" value="5.10.0-1029-oem"/>
+    <property name="java.awt.fonts" value=""/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="openj9-0.26.0"/>
+    <property name="user.variant" value=""/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="jdk.extensions.name" value="Extensions for OpenJDK for Eclipse OpenJ9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="ibm.signalhandling.sigint" value="true"/>
+    <property name="user.home" value="/home/imuerte"/>
+    <property name="com.ibm.cpu.endian" value="little"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="ibm.signalhandling.sigchain" value="true"/>
+    <property name="library.jansi.path" value="/home/imuerte/dev/apache-maven-3.8.1/lib/jansi-native"/>
+    <property name="java.library.path" value="/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/amd64/default:/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/amd64:/usr/lib64:/usr/lib"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="java.vm.vendor" value="Eclipse OpenJ9"/>
+    <property name="java.fullversion" value="1.8.0_292-b10
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20210421_1000 (JIT enabled, AOT enabled)
+OpenJ9   - b4cc246d9
+OMR      - 162e6f729
+JCL      - 2a5e268814 based on jdk8u292-b10"/>
+    <property name="maven.home" value="/home/imuerte/dev/apache-maven-3.8.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.class.path" value="/home/imuerte/dev/apache-maven-3.8.1/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.java.launcher.pid" value="12344"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/imuerte/projects/auri/test-cucumber"/>
+    <property name="ibm.system.encoding" value="UTF-8"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="ibm.signalhandling.rs" value="false"/>
+    <property name="java.ext.dirs" value="/home/imuerte/.sdkman/candidates/java/8.0.292.j9-adpt/jre/lib/ext"/>
+    <property name="user.dir" value="/home/imuerte/projects/auri/test-cucumber"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.name" value="Eclipse OpenJ9 VM"/>
+    <property name="com.ibm.oti.shared.enabled" value="false"/>
+    <property name="com.ibm.vm.bitmode" value="64"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="com.ibm.oti.configuration" value="scar"/>
+    <property name="java.specification.version" value="1.8"/>
+  </properties>
+  <testcase classname="Registro de un cliente" name="Cliente se registra con exito" time="19.917"/>
+  <testcase classname="Registro de un cliente" name="Cliente tiene error en el login" time="12.076">
+    <failure message="expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.cucumber.step.SignUpStep.el_deberia_ver_que_el_registro_ha_fallado(SignUpStep.java:47)
+	at ✽.El deberia ver que el registro ha fallado(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:11)
+</failure>
+    <system-out>
+Scenario: Cliente tiene error en el login              &amp;#27;[90m# src/test/resources/features/signup.feature:8&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mMiku quiere crear una cuenta&amp;#27;[0m                   &amp;#27;[90m# com.cucumber.step.SignUpStep.miku_quiere_crear_una_cuenta()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mEl envia la información requerida por la cuenta&amp;#27;[0m &amp;#27;[90m# com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mEl deberia ver que el registro ha fallado&amp;#27;[0m       &amp;#27;[90m# com.cucumber.step.SignUpStep.el_deberia_ver_que_el_registro_ha_fallado()&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.cucumber.step.SignUpStep.el_deberia_ver_que_el_registro_ha_fallado(SignUpStep.java:47)
+	at ✽.El deberia ver que el registro ha fallado(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:11)
+&amp;#27;[0m
+
+    Embedding 4d39536d-a2ae-4e52-8976-15e946bbcd4c [image/png 239047 bytes]
+
+</system-out>
+    <system-err>sep 19, 2021 7:51:35 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFORMACIÓN: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+sep 19, 2021 7:51:35 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFORMACIÓN: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@37857756, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5eb13372, org.springframework.test.context.support.DirtiesContextTestExecutionListener@86b803eb]
+sep 19, 2021 7:51:35 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerScope
+INFORMACIÓN: Replacing scope &apos;cucumber-glue&apos; from [io.cucumber.spring.GlueCodeScope@180efab0] to [io.cucumber.spring.GlueCodeScope@1b2bff71]
+</system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.cucumber.CucumberTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.517 sec <<< FAILURE!
+Cliente tiene error en el login(Registro de un cliente)  Time elapsed: 12.076 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.cucumber.step.SignUpStep.el_deberia_ver_que_el_registro_ha_fallado(SignUpStep.java:47)
+	at ✽.El deberia ver que el registro ha fallado(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:11)
+
