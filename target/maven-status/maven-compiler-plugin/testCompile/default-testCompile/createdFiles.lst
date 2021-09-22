@@ -12,6 +12,8 @@ com/cucumber/step/SignUpStep.class
 com/cucumber/builders/data/UserBuilder.class
 com/cucumber/config/DriverConfig.class
 com/cucumber/models/User.class
+com/cucumber/util/reporting/ReporterHook.class
+com/cucumber/models/ScenarioExecutionInfo.class
 com/cucumber/enums/Browser.class
 com/cucumber/enums/Gender.class
 com/cucumber/util/RandomNumberGenerator.class

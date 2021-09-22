@@ -24,6 +24,7 @@ public class SignUpStep {
     @Given("^Miku quiere crear una cuenta$")
     public void miku_quiere_crear_una_cuenta() throws Throwable {
         navigateTo.signUpPage();
+        Thread.sleep(4000);
 
     }
 

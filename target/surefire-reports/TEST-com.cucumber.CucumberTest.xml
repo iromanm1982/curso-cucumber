@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="com.cucumber.CucumberTest" time="31.993" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="com.cucumber.CucumberTest" time="37.959" errors="4" skipped="0">
   <properties>
     <property name="java.vendor" value="AdoptOpenJDK"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
@@ -66,7 +66,7 @@ JCL      - 2a5e268814 based on jdk8u292-b10"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.class.path" value="/home/imuerte/dev/apache-maven-3.8.1/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="sun.java.launcher.pid" value="12344"/>
+    <property name="sun.java.launcher.pid" value="20114"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.io.tmpdir" value="/tmp"/>
@@ -86,37 +86,211 @@ JCL      - 2a5e268814 based on jdk8u292-b10"/>
     <property name="com.ibm.oti.configuration" value="scar"/>
     <property name="java.specification.version" value="1.8"/>
   </properties>
-  <testcase classname="Registro de un cliente" name="Cliente se registra con exito" time="19.917"/>
-  <testcase classname="Registro de un cliente" name="Cliente tiene error en el login" time="12.076">
-    <failure message="expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at com.cucumber.step.SignUpStep.el_deberia_ver_que_el_registro_ha_fallado(SignUpStep.java:47)
-	at ✽.El deberia ver que el registro ha fallado(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:11)
-</failure>
+  <testcase classname="Registro de un cliente" name="Cliente se registra con exito" time="18.197">
+    <error message="Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at com.cucumber.pageobject.SignUpService.selectCountry(SignUpService.java:50)
+	at com.cucumber.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
+	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:5)
+</error>
+    <system-out>
+Scenario: Cliente se registra con exito                &amp;#27;[90m# src/test/resources/features/signup.feature:3&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mMiku quiere crear una cuenta&amp;#27;[0m                   &amp;#27;[90m# com.cucumber.step.SignUpStep.miku_quiere_crear_una_cuenta()&amp;#27;[0m
+  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31mEl envia la información requerida por la cuenta&amp;#27;[0m &amp;#27;[90m# com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at com.cucumber.pageobject.SignUpService.selectCountry(SignUpService.java:50)
+	at com.cucumber.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
+	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:5)
+&amp;#27;[0m
+
+    Embedding 62023530-d0cc-4d65-9012-4473ff8645ed [image/png 244243 bytes]
+
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mEl deberia ver la cuenta creada&amp;#27;[0m                 &amp;#27;[90m# com.cucumber.step.SignUpStep.el_deberia_ver_la_cuenta_creada()&amp;#27;[0m
+</system-out>
+    <system-err>sep 22, 2021 8:32:14 PM io.cucumber.junit.Cucumber &lt;init&gt;
+ADVERTENCIA: By default Cucumber is running in --non-strict mode.
+This default will change to --strict and --non-strict will be removed.
+You can use --strict or @CucumberOptions(strict = true) to suppress this warning
+sep 22, 2021 8:32:14 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFORMACIÓN: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+sep 22, 2021 8:32:14 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFORMACIÓN: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52b887e4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e5b4a59c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@418fffd8]
+sep 22, 2021 8:32:15 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFORMACIÓN: Refreshing org.springframework.context.support.GenericApplicationContext@24b698fc: startup date [Wed Sep 22 20:32:15 CEST 2021]; root of context hierarchy
+SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1632335536304	geckodriver	INFO	Listening on 127.0.0.1:10888
+1632335536755	mozrunner::runner	INFO	Running command: &quot;/usr/lib/firefox/firefox&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;9222&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/tmp/rust_mozprofileIjB5pL&quot;
+1632335537729	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at /tmp/rust_mozprofileIjB5pL/search.json.mozlz4&quot;, (void 0)))
+
+!!! could not start server on port 9222: [Exception... &quot;Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.init]&quot;  nsresult: &quot;0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE)&quot;  location: &quot;JS frame :: chrome://remote/content/server/HTTPD.jsm :: _start :: line 567&quot;  data: no]
+
+1632335540201	RemoteAgent	ERROR	unable to stop listener: [Exception... &quot;Unexpected error&quot;  nsresult: &quot;0x8000ffff (NS_ERROR_UNEXPECTED)&quot;  location: &quot;JS frame :: chrome://remote/content/server/HTTPD.jsm :: stop :: line 621&quot;  data: no] Stack trace: stop()@HTTPD.jsm:621
+close()@RemoteAgent.jsm:140
+asyncListen()@RemoteAgent.jsm:120
+1632335540202	RemoteAgent	ERROR	Unable to start remote agent: : [Exception... &quot;Component is not available&quot;  nsresult: &quot;0x80040111 (NS_ERROR_NOT_AVAILABLE)&quot;  location: &quot;JS frame :: chrome://remote/content/server/HTTPD.jsm :: _start :: line 612&quot;  data: no] Stack trace: _start()@HTTPD.jsm:612
+asyncListen()@RemoteAgent.jsm:113
+1632335540672	Marionette	INFO	Listening on port 39245
+1632335540799	Marionette	WARN	TLS certificate errors will be ignored for this session
+sep 22, 2021 8:32:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="Registro de un cliente" name="Cliente tiene error en el login" time="7.383">
+    <error message="Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at com.cucumber.pageobject.SignUpService.selectCountry(SignUpService.java:50)
+	at com.cucumber.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
+	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:10)
+</error>
     <system-out>
 Scenario: Cliente tiene error en el login              &amp;#27;[90m# src/test/resources/features/signup.feature:8&amp;#27;[0m
   &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mMiku quiere crear una cuenta&amp;#27;[0m                   &amp;#27;[90m# com.cucumber.step.SignUpStep.miku_quiere_crear_una_cuenta()&amp;#27;[0m
-  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mEl envia la información requerida por la cuenta&amp;#27;[0m &amp;#27;[90m# com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta()&amp;#27;[0m
-  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mEl deberia ver que el registro ha fallado&amp;#27;[0m       &amp;#27;[90m# com.cucumber.step.SignUpStep.el_deberia_ver_que_el_registro_ha_fallado()&amp;#27;[0m
-      &amp;#27;[31morg.junit.ComparisonFailure: expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at com.cucumber.step.SignUpStep.el_deberia_ver_que_el_registro_ha_fallado(SignUpStep.java:47)
-	at ✽.El deberia ver que el registro ha fallado(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:11)
+  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31mEl envia la información requerida por la cuenta&amp;#27;[0m &amp;#27;[90m# com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at com.cucumber.pageobject.SignUpService.selectCountry(SignUpService.java:50)
+	at com.cucumber.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
+	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:10)
 &amp;#27;[0m
 
-    Embedding 4d39536d-a2ae-4e52-8976-15e946bbcd4c [image/png 239047 bytes]
+    Embedding f18d25df-92c5-4645-8947-c94a9dbe6cdb [image/png 97104 bytes]
 
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mEl deberia ver que el registro ha fallado&amp;#27;[0m       &amp;#27;[90m# com.cucumber.step.SignUpStep.el_deberia_ver_que_el_registro_ha_fallado()&amp;#27;[0m
 </system-out>
-    <system-err>sep 19, 2021 7:51:35 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+    <system-err>sep 22, 2021 8:32:32 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
 INFORMACIÓN: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-sep 19, 2021 7:51:35 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
-INFORMACIÓN: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@37857756, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5eb13372, org.springframework.test.context.support.DirtiesContextTestExecutionListener@86b803eb]
-sep 19, 2021 7:51:35 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerScope
-INFORMACIÓN: Replacing scope &apos;cucumber-glue&apos; from [io.cucumber.spring.GlueCodeScope@180efab0] to [io.cucumber.spring.GlueCodeScope@1b2bff71]
+sep 22, 2021 8:32:32 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFORMACIÓN: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b51bb9d4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2d0252dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27848c05]
+sep 22, 2021 8:32:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerScope
+INFORMACIÓN: Replacing scope &apos;cucumber-glue&apos; from [io.cucumber.spring.GlueCodeScope@c98ee380] to [io.cucumber.spring.GlueCodeScope@29738db4]
+</system-err>
+  </testcase>
+  <testcase classname="Registro de un cliente" name="Cliente se registra con exito2" time="5.975">
+    <error message="Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at com.cucumber.pageobject.SignUpService.selectCountry(SignUpService.java:50)
+	at com.cucumber.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
+	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:15)
+</error>
+    <system-out>
+Scenario: Cliente se registra con exito2               &amp;#27;[90m# src/test/resources/features/signup.feature:13&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mMiku quiere crear una cuenta&amp;#27;[0m                   &amp;#27;[90m# com.cucumber.step.SignUpStep.miku_quiere_crear_una_cuenta()&amp;#27;[0m
+  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31mEl envia la información requerida por la cuenta&amp;#27;[0m &amp;#27;[90m# com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at com.cucumber.pageobject.SignUpService.selectCountry(SignUpService.java:50)
+	at com.cucumber.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
+	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:15)
+&amp;#27;[0m
+
+    Embedding e7427118-a7f5-4938-90cf-a1dae318368c [image/png 96942 bytes]
+
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mEl deberia ver la cuenta creada&amp;#27;[0m                 &amp;#27;[90m# com.cucumber.step.SignUpStep.el_deberia_ver_la_cuenta_creada()&amp;#27;[0m
+</system-out>
+    <system-err>sep 22, 2021 8:32:40 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFORMACIÓN: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+sep 22, 2021 8:32:40 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFORMACIÓN: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4f0b0d57, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2222d8b1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@cd49fa50]
+sep 22, 2021 8:32:40 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerScope
+INFORMACIÓN: Replacing scope &apos;cucumber-glue&apos; from [io.cucumber.spring.GlueCodeScope@29738db4] to [io.cucumber.spring.GlueCodeScope@7f1cc449]
+</system-err>
+  </testcase>
+  <testcase classname="Registro de un cliente" name="Cliente tiene error en el login2" time="6.404">
+    <error message="Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at com.cucumber.pageobject.SignUpService.selectCountry(SignUpService.java:50)
+	at com.cucumber.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
+	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:20)
+</error>
+    <system-out>
+Scenario: Cliente tiene error en el login2             &amp;#27;[90m# src/test/resources/features/signup.feature:18&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mMiku quiere crear una cuenta&amp;#27;[0m                   &amp;#27;[90m# com.cucumber.step.SignUpStep.miku_quiere_crear_una_cuenta()&amp;#27;[0m
+  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31mEl envia la información requerida por la cuenta&amp;#27;[0m &amp;#27;[90m# com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;muerte&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.0-1029-oem&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at com.cucumber.pageobject.SignUpService.selectCountry(SignUpService.java:50)
+	at com.cucumber.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
+	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:20)
+&amp;#27;[0m
+
+    Embedding 82d924e5-9813-4b59-8a51-c8e462bd681e [image/png 97163 bytes]
+
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mEl deberia ver que el registro ha fallado&amp;#27;[0m       &amp;#27;[90m# com.cucumber.step.SignUpStep.el_deberia_ver_que_el_registro_ha_fallado()&amp;#27;[0m
+</system-out>
+    <system-err>sep 22, 2021 8:32:46 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFORMACIÓN: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+sep 22, 2021 8:32:46 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFORMACIÓN: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@db3a4d76, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@76b97f13, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1f60cf26]
+sep 22, 2021 8:32:46 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerScope
+INFORMACIÓN: Replacing scope &apos;cucumber-glue&apos; from [io.cucumber.spring.GlueCodeScope@7f1cc449] to [io.cucumber.spring.GlueCodeScope@8202bf32]
 </system-err>
   </testcase>
 </testsuite>

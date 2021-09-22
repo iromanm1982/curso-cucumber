@@ -26,7 +26,7 @@ public class UserBuilder {
                 .lastName("Muerte")
                 .email("miku@catmail.com")
                 .gender(Gender.FEMALE)
-                .country("Spain")
+                .country("Australia")
                 .birthDay("4")
                 .birthMonth("April")
                 .birthYear("2015")

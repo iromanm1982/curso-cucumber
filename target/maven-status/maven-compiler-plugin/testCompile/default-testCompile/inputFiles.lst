@@ -5,6 +5,7 @@
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/util/RandomNumberGenerator.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/pageobject/PageBase.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/pageobject/SignUpService.java
+/home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/models/ScenarioExecutionInfo.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/CucumberTest.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/models/User.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/enums/Gender.java
@@ -14,3 +15,4 @@
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/step/SignUpStep.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/enums/TakeScreenshotConditions.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/util/driver/DriverFactory.java
+/home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/util/reporting/ReporterHook.java
