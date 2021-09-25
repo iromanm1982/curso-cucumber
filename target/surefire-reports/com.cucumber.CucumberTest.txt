@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.cucumber.CucumberTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 39.954 sec <<< FAILURE!
-Cliente se registra con exito(Registro de un cliente)  Time elapsed: 18.197 sec  <<< ERROR!
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 42.914 sec <<< FAILURE!
+Cliente se registra con exito(Registro de un cliente)  Time elapsed: 19.286 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
@@ -15,7 +15,7 @@ Driver info: driver.version: unknown
 	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
 	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:5)
 
-Cliente tiene error en el login(Registro de un cliente)  Time elapsed: 7.383 sec  <<< ERROR!
+Cliente tiene error en el login(Registro de un cliente)  Time elapsed: 7.307 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
@@ -28,7 +28,7 @@ Driver info: driver.version: unknown
 	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
 	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:10)
 
-Cliente se registra con exito2(Registro de un cliente)  Time elapsed: 5.975 sec  <<< ERROR!
+Cliente se registra con exito2(Registro de un cliente)  Time elapsed: 6.88 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
@@ -41,7 +41,7 @@ Driver info: driver.version: unknown
 	at com.cucumber.step.SignUpStep.el_envia_la_información_requerida_por_la_cuenta(SignUpStep.java:34)
 	at ✽.El envia la información requerida por la cuenta(file:///home/imuerte/projects/auri/test-cucumber/src/test/resources/features/signup.feature:15)
 
-Cliente tiene error en el login2(Registro de un cliente)  Time elapsed: 6.404 sec  <<< ERROR!
+Cliente tiene error en el login2(Registro de un cliente)  Time elapsed: 7.196 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Australia
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'

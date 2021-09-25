@@ -4,6 +4,7 @@ com/cucumber/pageobject/SignUpService.class
 com/cucumber/pageobject/PageBase.class
 com/cucumber/util/reporting/PhotographerHook.class
 com/cucumber/util/driver/DriverFactory.class
+com/cucumber/util/listener/JReporter.class
 com/cucumber/tasks/UserSignUp.class
 com/cucumber/pageobject/SignUpPageObject.class
 com/cucumber/tasks/NavigateTo.class

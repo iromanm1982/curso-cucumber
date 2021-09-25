@@ -1,5 +1,6 @@
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/enums/Browser.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/config/DriverConfig.java
+/home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/util/listener/JReporter.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/tasks/UserSignUp.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/util/reporting/PhotographerHook.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/util/RandomNumberGenerator.java
