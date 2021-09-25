@@ -1,5 +1,6 @@
 Feature: Registro de un cliente
 
+  @run
   Scenario: Cliente se registra con exito
     Given Miku quiere crear una cuenta
     When El envia la información requerida por la cuenta
