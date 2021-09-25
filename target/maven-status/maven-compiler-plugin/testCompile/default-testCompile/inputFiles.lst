@@ -9,10 +9,13 @@
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/models/ScenarioExecutionInfo.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/CucumberTest.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/models/User.java
+/home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/StartApplication.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/enums/Gender.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/tasks/NavigateTo.java
+/home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/CucumberSpringContextConfiguration.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/pageobject/SignUpPageObject.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/builders/data/UserBuilder.java
+/home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/config/TestConfig.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/step/SignUpStep.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/enums/TakeScreenshotConditions.java
 /home/imuerte/projects/auri/test-cucumber/src/test/java/com/cucumber/util/driver/DriverFactory.java

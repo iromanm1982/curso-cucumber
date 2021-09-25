@@ -5,9 +5,11 @@ import com.cucumber.models.User;
 import com.cucumber.pageobject.SignUpService;
 import com.cucumber.util.RandomNumberGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("cucumber-glue")
 public class UserSignUp {
 
     @Autowired
