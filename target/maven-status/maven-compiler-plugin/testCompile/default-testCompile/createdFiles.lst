@@ -5,10 +5,12 @@ com/cucumber/pageobject/SignUpPageObject.class
 com/cucumber/CucumberSpringContextConfiguration.class
 com/cucumber/builders/data/UserBuilder.class
 com/cucumber/config/DriverConfig.class
+com/cucumber/database/domain/User.class
 com/cucumber/config/TestConfig.class
 com/cucumber/util/reporting/ReporterHook.class
 com/cucumber/enums/Browser.class
 com/cucumber/util/RandomNumberGenerator.class
+com/cucumber/step/DatabaseStep.class
 com/cucumber/enums/TakeScreenshotConditions.class
 com/cucumber/CucumberTest.class
 com/cucumber/util/driver/DriverFactory.class
@@ -18,6 +20,7 @@ com/cucumber/tasks/NavigateTo.class
 com/cucumber/models/User$UserBuilder.class
 com/cucumber/step/SignUpStep.class
 com/cucumber/StartApplication.class
+com/cucumber/database/repository/UserRepository.class
 com/cucumber/models/User.class
 com/cucumber/models/ScenarioExecutionInfo.class
 com/cucumber/enums/Gender.class
